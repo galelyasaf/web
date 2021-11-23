@@ -14,10 +14,6 @@
        top: 0;
        width: 100%;
 
-          li {
-      display: inline;
-      border-right: 1px solid #bbb;
-   }
    -->
 <style>
     h1 {
@@ -28,17 +24,19 @@
       font-family: 'Bungee', cursive;
     }
 
-   ul {
+   .topnav {
        list-style-type: none;
        margin: 0;
        padding: 0;
        overflow: hidden;
        background-color: rgba(192, 75, 114, 0.3);
+
+      display: inline;
+      border-right: 1px solid #bbb;
    }
 
 
-
-   li a {
+   .topnav a {
        display: block;
        color: rgba(122, 188, 160, 1);
        text-align: center;
@@ -46,7 +44,7 @@
        text-decoration: none;
    }
 
-   li a:hover {
+   .topnav a:hover {
        background-color: rgba(217, 139, 160, 0.6);
    }
 
@@ -58,9 +56,9 @@
 <body style="background-color:rgba(122, 207, 130, 0.5);">
 <header>
     <h1>Gal Elyasaf</h1>
-    <ul class="bodyfont">
-        <li><a href="aboutme.html">About me</a></li>
-        <li><a href="memes.html">Memes</a></li>
+    <ul class="bodyfont topnav">
+        <li class="topnav"><a  href="aboutme.html">About me</a></li>
+        <li class="topnav"><a  href="memes.html">Memes</a></li>
         <!--<li><a href="#contact">Contact</a></li>  to jump to a spot in the page-->
     </ul>
 
