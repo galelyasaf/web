@@ -22,11 +22,31 @@
        list-style-type: none;
        margin: 0;
        padding: 0;
+       overflow: hidden;
+       background-color: #333;
+       position: sticky;
    }
 
-    * {
+   li {
+      display: inline;
+      border-right: 1px solid #bbb;
+   }
+
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+
+   li a:hover {
+       background-color: #111;
+   }
+
+   * {
       text-align: center;
-    }
+   }
 </style>
 
 <body style="background-color:rgba(122, 207, 130, 0.5);">
@@ -34,6 +54,7 @@
     <ul class="bodyfont">
         <li><a href="aboutme.html">About me</a></li>
         <li><a href="memes.html">Memes</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 
     <hr/>
